@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 """
 Created on Mon Feb 26 23:40:08 2018
 @author: Anubhav Singh
