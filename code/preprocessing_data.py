@@ -24,12 +24,6 @@ cust_prod = pd.crosstab(mt['user_id'], mt['aisle'])
 cust_prod = cust_prod.reset_index(drop=True)
 cust_prod = cust_prod.join(userid_col)
 
-###############################################################################
-# print (cust_prod.shape)
-# print (mt.head(20))
-# pvalue_count = mt['product_name'].value_counts()
-# print (len(mt['product_name'].unique()))
-# print (len(mt['aisle'].unique()))
-# aisle_val_count = mt['aisle'].value_counts()
+
 
 
