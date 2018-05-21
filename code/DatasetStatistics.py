@@ -1,9 +1,8 @@
-# -*- coding: utf-8 -*-
 """
 Created on Sat Mar 17 19:32:22 2018
-
-@author: anubh
+@author: anubhav singh
 """
+
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -14,8 +13,7 @@ def get_unique_count(x):
 
 orders_df = pd.read_csv('orders/orders.csv')
 # print (orders_df.shape)
-'''a column in orders.csv file called eval_set tells us as 
-   to which of the three datasets (prior, train or test) the given row goes to'''
+# a column in orders.csv file called eval_set tells us as to which of the three datasets (prior, train or test) the given row goes to
 row_count = orders_df.eval_set.value_counts()
 print (row_count)
 plt.figure(figsize=(13,9))
