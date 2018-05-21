@@ -2,7 +2,6 @@ from preprocessing_data import cust_prod
 import pandas as pd
 from sklearn.decomposition import PCA
 
-
 pca = PCA(n_components=6)
 pca.fit(cust_prod.iloc[:,0:-1])
 pca_new = pca.transform(cust_prod.iloc[:,0:-1])
