@@ -35,7 +35,7 @@ def findksimilarusers(user_id, metric, k):
             
     return user_clust, similarities, indices, aisle_bucket, sim_users
 
-user_id = 7
+user_id = 13
 user_clust, similarities, indices, aisle_bucket, sim_users = findksimilarusers(user_id , 'correlation', 5)
 
 prime_aisle_candidate = aisle_bucket
